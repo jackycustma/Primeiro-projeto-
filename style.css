@@ -1,0 +1,260 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: borer-box;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+.interface{
+    max-width: 1780px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+/* cabeçario */
+header{
+    padding: 40px 4%;
+}
+
+header >.interface{
+display:flex;
+align-items: center;
+justify-content:space-between ;
+}
+
+header a{
+    color: rgb(161, 164, 166);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.50);
+}
+header nav ul{
+    list-style-type: none;
+
+}
+header nav ul li{
+    display: inline-block;
+    padding:0 40px ;
+
+}
+
+ .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #b76dd4;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+h2.titulo span{
+    color: #7602a4;
+}
+.btn-contato button:hover{
+    box-shadow: 0px 0px 20px  #7602a4;
+    transform: scale(1.20);
+    transition: .3s;
+}
+/* estilo de topo de site */
+section.topo-do-site{
+padding: 40px 4%;
+
+}
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+}
+
+.topo-do-site h1{
+    color: #cd6af8db;
+    font-size: 42px;
+    line-height: 40px;
+
+}
+.topo-do-site h1 span{
+    color:#18ffff;
+    font-size: 100px;
+}
+.topo-do-site .txt-topo-site p{
+    color: rgba(250, 251, 251, 0.751);
+    margin: 40px 0px;
+    
+} .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #b76dd4;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    border-radius: 50% 25%;
+    border:8px solid #57d02e;
+}
+ 
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+/* estilo das especialidades */
+section.informaçoes-do-jogo{
+    padding: 40px 4%;
+
+}
+section.informaçoes-do-jogo .flex{
+    gap: 60px;
+}
+
+.informaçoes-do-jogo .Informações-box{
+    color:#fff;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 45px;
+    transition: 2s;
+}
+.informaçoes-do-jogo .Informações-box:hover{
+    transform: scale(1.25);
+    box-shadow: 0 0 8px  #b804ff;
+}
+.informaçoes-do-jogo .Informações-box i{
+    font-size: 70px;
+    color: #18ffff;
+} 
+.informaçoes-do-jogo .Informações-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+footer{
+    padding: 60px 4%;
+    box-shadow:0 0 20px 05px rgba(191, 0, 255, 0.308);
+    
+}
+footer .flex{
+    justify-content:space-between;
+
+}
+footer .line-footer{
+    padding: 20px 0;
+    
+}
+.borda{
+    border-top:2px solid #18ffff;
+}
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ab2bdef2;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+footer .line-footer p i{
+color: #18ffff;
+font-size: 22px;
+
+}footer .line-footer p a{
+    color:#fff;
+}
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px 4%;
+    }
+
+    section.topo-do-site .flex {
+        flex-direction: column;
+        text-align: center;
+        gap:40px
+    }
+    .flex{
+        flex-direction:column;
+    }
+    .topo-do-site h1 {
+        font-size: 32px;
+    }
+
+    .topo-do-site h1 span {
+        font-size: 60px;
+    }
+
+    .btn-contato button {
+        padding: 8px 30px;
+        font-size: 16px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        max-width: 200px;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 480px) {}
+    header nav ul li {
+        padding: 0 10px;
+    }
+
+    section.topo-do-site h1 {
+        font-size: 28px;
+    }
+
+    .topo-do-site h1 span {
+        font-size: 50px;
+    }
+
+    .btn-contato button {
+        padding: 6px 20px;
+        font-size: 14px;
+    }
+
+    form {
+        padding: 40px 4%;
+    }
+
+    form input,
+    form textarea {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    form .btn-enviar input {
+        width: 100%;
+        padding: 15
+    }
+
+
+    section.informaçoes-do-jogo{
+        padding: 40px 8%;
+    }
+
+
+
+
+
