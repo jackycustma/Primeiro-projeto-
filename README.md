@@ -1,4 +1,4 @@
-# Projeto-site+jogo
+# Projeto-site-jogo
  
 Repositório criado para as alteraçoes no projeto do jogo e do site
 
